@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Interview Coach</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      html {
+        background: url('https://storage.googleapis.com/aistudio-project-files/555e7631-15c1-403d-82c5-41e1a5316335/d9765792-5649-41e9-a681-39655f013d81') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      }
+      body {
+        /* This creates a semi-transparent overlay. slate-900 is #0f172a */
+        background-color: rgba(15, 23, 42, 0.95);
+      }
+      /* For custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #1e293b;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #475569;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #64748b;
+      }
+      
+      /* Animations */
+      @keyframes fade-in-up {
+        from {
+          opacity: 0;
+          transform: translateY(15px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .animate-fade-in-up {
+        animation: fade-in-up 0.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) forwards;
+      }
+
+      @keyframes pulse-glow-cyan {
+        0%, 100% {
+            box-shadow: 0 0 4px rgba(34, 211, 238, 0);
+            border-color: #334155; /* slate-700 */
+        }
+        50% {
+            box-shadow: 0 0 12px 2px rgba(34, 211, 238, 0.5);
+            border-color: #67e8f9; /* cyan-300 */
+        }
+      }
+      .speaking-glow {
+          animation: pulse-glow-cyan 2.2s infinite ease-in-out;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.20.0",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="text-white">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

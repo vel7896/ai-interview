@@ -1,0 +1,7 @@
+{
+  "name": "AI Interview ",
+  "description": "An interactive web application that helps users practice for interviews. It uses text-to-speech to ask questions, speech-to-text to capture answers, and the Gemini API to provide real-time feedback and a final performance report.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
